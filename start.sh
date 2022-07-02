@@ -1,3 +1,3 @@
 cd /app
 echo "----- Now trying to run gunicorn ------ " 
-CMD [ "gunicorn", "--workers=5", "--threads=1", "-b 0.0.0.0:80", "app:server"]
+CMD [ "gunicorn", "--workers=5", "--threads=1", "-b 5000", "app:server"]
