@@ -1,7 +1,7 @@
 FROM ubuntu:bionic
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get -y install \
-    python3.7 python3.7-dev python3.7-pip python3.7-venv 
+    python3.7 python3.7-dev python3-pip python3.7-venv 
   
 ARG USER=root
 USER $USER
