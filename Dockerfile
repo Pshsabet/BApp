@@ -5,7 +5,7 @@ RUN apt-get update && apt-get -y install \
   
 ARG USER=root
 USER $USER
-RUN python3 -m venv venv
+RUN python3.7 -m venv venv
 WORKDIR /app
 
 COPY requirements.txt ./requirements.txt
